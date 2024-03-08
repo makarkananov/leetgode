@@ -53,7 +53,7 @@ func (ns *NotificationService) HandleRemindersMenu(msg *tgbotapi.Message) {
 }
 
 func (ns *NotificationService) HandleAddReminder(msg *tgbotapi.Message) {
-	ns.ReplyMessage(msg, "Please send me the time in which you want to receive a reminder in the following format: \n\nHH:MM", nil)
+	ns.ReplyMessage(msg, "Please send me the UTC time in which you want to receive a reminder in the following format: \n\nHH:MM", nil)
 }
 
 func (ns *NotificationService) HandleWaitingAddReminderTime(msg *tgbotapi.Message) {
@@ -74,7 +74,7 @@ func (ns *NotificationService) HandleWaitingAddReminderTime(msg *tgbotapi.Messag
 }
 
 func (ns *NotificationService) HandleDeleteReminder(msg *tgbotapi.Message) {
-	ns.ReplyMessage(msg, "Please send me the time of reminder which you want to delete in the following format: \n\nHH:MM", nil)
+	ns.ReplyMessage(msg, "Please send me the UTC time of reminder which you want to delete in the following format: \n\nHH:MM", nil)
 }
 
 func (ns *NotificationService) HandleWaitingDeleteReminderTime(msg *tgbotapi.Message) {

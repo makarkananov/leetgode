@@ -1,6 +1,6 @@
 {
   "database": {
-    "host": "dpg-cnch2oud3nmc738gfbkg-a",
+    "host": "dpg-cnch2oud3nmc738gfbkg-a.frankfurt-postgres.render.com",
     "name": "leetgode",
     "password": "yR7l6nBYMZH06RbRIYa86yczAkl6gvcD",
     "port": 5432,
